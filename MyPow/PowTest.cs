@@ -14,5 +14,13 @@ namespace MyPow
             Func<bool> property = () => targer.MyPow(x, 0) == 1;
             return property.ToProperty();
         }
+
+        [Test]
+        public void Test_Square_Root_Of_3_Should_Be_9()
+        {
+            var target = new Solution();
+            var actual = target.MyPow(3, 2);
+            Assert.AreEqual(9, actual);
+        }
     }
 }
