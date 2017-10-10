@@ -29,5 +29,12 @@ namespace MyPow
             var actual = target.MyPow(3, 3);
             Assert.AreEqual(27, actual);
         }
+
+        [Test]
+        public void Test_Negative_Square_Root_Of_3_Should_Be_1_By_9()
+        {
+            var actual = target.MyPow(3, -2);
+            Assert.AreEqual(1/9d, actual);
+        }
     }
 }
