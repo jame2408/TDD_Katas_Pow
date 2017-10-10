@@ -36,5 +36,12 @@ namespace MyPow
             var actual = target.MyPow(3, -2);
             Assert.AreEqual(1/9d, actual);
         }
+        
+        [Test]
+        public void Test_Minimal_integer_To_Power_Of_2_Should_Be_Approaches_0()
+        {
+            var actual = target.MyPow(2, Int32.MinValue);
+            Assert.AreEqual(0, actual);
+        }
     }
 }
