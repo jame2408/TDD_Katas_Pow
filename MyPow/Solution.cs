@@ -13,12 +13,11 @@
                 x = 1 / x;
                 n *= -1;
             }
-            var answer = 1d;
-            for (int i = 0; i < n; i++)
+            if ((n & 1) == 0)
             {
-                answer *= x;
+                return MyPow(x * x, n / 2);
             }
-            return answer;
+            return x * MyPow(x * x, n / 2);
         }
     }
 }
