@@ -8,7 +8,11 @@
             {
                 return 1;
             }
-
+            if (n < 0)
+            {
+                x = 1 / x;
+                n *= -1;
+            }
             var answer = 1d;
             for (int i = 0; i < n; i++)
             {
