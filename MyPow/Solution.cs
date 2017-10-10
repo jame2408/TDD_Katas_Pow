@@ -4,7 +4,7 @@
     {
         public double MyPow(double x, int n)
         {
-            throw new System.NotImplementedException();
+            return 1;
         }
     }
 }
