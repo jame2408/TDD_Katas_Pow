@@ -8,7 +8,13 @@
             {
                 return 1;
             }
-            return x * x;
+
+            var answer = 1d;
+            for (int i = 0; i < n; i++)
+            {
+                answer *= x;
+            }
+            return answer;
         }
     }
 }
