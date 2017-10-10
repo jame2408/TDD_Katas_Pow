@@ -1,4 +1,6 @@
-﻿namespace MyPow
+﻿using System;
+
+namespace MyPow
 {
     public class Solution
     {
@@ -7,6 +9,12 @@
             if (n == 0)
             {
                 return 1;
+            }
+
+            if (n == Int32.MinValue)
+            {
+                x = 1 / (x * x);
+                n = -(n / 2);
             }
             if (n < 0)
             {
